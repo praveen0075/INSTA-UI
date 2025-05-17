@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
+import 'package:instagram_ui/pages/messages_list_screen.dart';
 import 'package:instagram_ui/utils/home_posts.dart';
 import 'package:instagram_ui/utils/story_hightlights.dart';
 
@@ -20,10 +21,19 @@ class Homepage extends StatelessWidget {
               children: [
                 // Icon(Icons.add),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(20),
                   child: Icon(Icons.favorite_outline),
                 ),
-                Icon(Icons.chat_bubble_outline),
+                GestureDetector(
+                  onTap:
+                      () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MessagesListScreen(),
+                        ),
+                      ), 
+                  child: Icon(Icons.message_outlined),
+                ),
               ],
             ),
           ],

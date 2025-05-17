@@ -54,7 +54,7 @@ class SearchPage extends StatelessWidget {
               ),
             ],
           ),
-        ),
+        ),  
       ),
       body: SearchPageGridview(),
     );

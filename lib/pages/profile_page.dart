@@ -51,8 +51,11 @@ class ProfilePage extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: 8,
                   itemBuilder:
-                      (context, index) =>
-                          StoryHightlights(textBelowStory: "2025",radiusOfcircleAvatar: 30,isHeightlight: true,),
+                      (context, index) => StoryHightlights(
+                        textBelowStory: "2025",
+                        radiusOfcircleAvatar: 30,
+                        isHeightlight: true,
+                      ),
                 ),
               ),
             ),
