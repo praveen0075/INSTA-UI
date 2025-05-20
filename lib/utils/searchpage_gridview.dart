@@ -34,26 +34,26 @@ class SearchPageGridview extends StatelessWidget {
     //     ],
     //   ),
     // );
-    return MasonryGridView.count(
-      crossAxisCount: 3,
-      mainAxisSpacing: 3,
-      crossAxisSpacing: 3,
-      itemBuilder:
-          (context, index) {
-             if (index % 7 == 2) {
-                return Container(
-                  height: 300,
-                  color: Colors.red,
-                );
-              } else {
-                return Container(
-                  height: 148,
-                  color: Colors.blue,
-                  // child: Image.asset(ListConsts.profilePics[index],fit: BoxFit.cover,),
-                );
-              }
-          },
-    );
+      return MasonryGridView.count(
+        crossAxisCount: 3,
+        mainAxisSpacing: 3,
+        crossAxisSpacing: 3,
+        itemBuilder:
+            (context, index) {
+              if (index % 7 == 2) {
+                  return Container(
+                    height: 300,
+                    color: Colors.red,
+                  );
+                } else {
+                  return Container(
+                    height: 148,
+                    color: Colors.blue,
+                    // child: Image.asset(ListConsts.profilePics[index],fit: BoxFit.cover,),
+                  );
+                }
+            },
+      );
     //     return GridView.custom(
     //   gridDelegate: SliverQuiltedGridDelegate(
     //     crossAxisCount: 3,
