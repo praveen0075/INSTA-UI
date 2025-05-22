@@ -75,6 +75,7 @@ class ReelsManagingWidget extends StatelessWidget {
                     textBelowStory: "",
                     radiusOfcircleAvatar: 16,
                     isHeightlight: false,
+                    imagecvr: "",
                   ),
                   kw7,
                   Column(

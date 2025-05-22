@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/constants/userlist.dart';
 
 class ProfileTab3 extends StatelessWidget {
   const ProfileTab3({super.key});
@@ -6,13 +7,22 @@ class ProfileTab3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: 10,
+      itemCount: userdpList.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
         crossAxisSpacing: 2,
         mainAxisSpacing: 2,
       ),
-      itemBuilder: (context, index) => Container(color: Colors.green),
+      itemBuilder:
+          (context, index) => Container(
+            decoration: BoxDecoration(
+              color: Colors.green,
+              image: DecorationImage(
+                image: AssetImage(userdpList[index]),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
     );
   }
 }

@@ -34,6 +34,7 @@ class _NavigationPageState extends State<NavigationPage> {
     return Scaffold(
       body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        selectedIconTheme: IconThemeData(color: Colors.black),
         onTap: _navigateThroughPages,
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,

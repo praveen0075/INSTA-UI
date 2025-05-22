@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:instagram_ui/constants/userlist.dart';
 
 class SearchPageGridview extends StatelessWidget {
   const SearchPageGridview({super.key});
@@ -34,26 +35,53 @@ class SearchPageGridview extends StatelessWidget {
     //     ],
     //   ),
     // );
-      return MasonryGridView.count(
-        crossAxisCount: 3,
-        mainAxisSpacing: 3,
-        crossAxisSpacing: 3,
-        itemBuilder:
-            (context, index) {
-              if (index % 7 == 2) {
-                  return Container(
-                    height: 300,
-                    color: Colors.red,
-                  );
-                } else {
-                  return Container(
-                    height: 148,
-                    color: Colors.blue,
-                    // child: Image.asset(ListConsts.profilePics[index],fit: BoxFit.cover,),
-                  );
-                }
-            },
-      );
+    return MasonryGridView.count(
+      itemCount: allPictureList.length,
+      crossAxisCount: 3,
+      mainAxisSpacing: 3,
+      crossAxisSpacing: 3,
+      itemBuilder: (context, index) {
+        if (index % 7 == 2) {
+          return Container(
+            height: 300,
+
+            decoration: BoxDecoration(
+              color: Colors.red,
+              image: DecorationImage(
+                image: AssetImage(allPictureList[index]),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                  right: 8,
+                  top: 8,
+                  child: Icon(
+                    Icons.video_library_sharp,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+              ],
+            ),
+          );
+        } else {
+          return Container(
+            height: 148,
+
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              image: DecorationImage(
+                image: AssetImage(allPictureList[index]),
+                fit: BoxFit.cover,
+              ),
+            ),
+            // child: Image.asset(ListConsts.profilePics[index],fit: BoxFit.cover,),
+          );
+        }
+      },
+    );
     //     return GridView.custom(
     //   gridDelegate: SliverQuiltedGridDelegate(
     //     crossAxisCount: 3,

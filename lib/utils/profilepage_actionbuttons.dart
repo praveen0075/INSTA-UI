@@ -31,14 +31,14 @@ class ProfilePageActionButtons extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 7),
+              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 7),
               child: Text(
                 "Share profile",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
           ),
-          kw7,
+        SizedBox(width: 2,),
           Container(
             decoration: BoxDecoration(
               color: const Color.fromARGB(180, 224, 224, 224),

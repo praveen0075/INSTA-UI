@@ -28,7 +28,7 @@ class MessageScreenNotesList extends StatelessWidget {
                             crossAxisAlignment:
                                 CrossAxisAlignment.center,
                             children: [ 
-                              CircleAvatar(radius: 44),
+                              CircleAvatar(radius: 38),
                               Text("Your note"),
                             ],
                           ),
@@ -41,7 +41,7 @@ class MessageScreenNotesList extends StatelessWidget {
                           right: 0.5,
                           // bottom: 3,
                           child: Card(
-                            child: Container(
+                            child: SizedBox(
                               width: 116,
                               child: Padding(
                                 padding: const EdgeInsets.all(5),
@@ -64,7 +64,7 @@ class MessageScreenNotesList extends StatelessWidget {
                             crossAxisAlignment:
                                 CrossAxisAlignment.center,
                             children: [
-                              CircleAvatar(radius: 42),
+                              CircleAvatar(radius: 38),
                               Text("username_2"),
                             ],
                           ),

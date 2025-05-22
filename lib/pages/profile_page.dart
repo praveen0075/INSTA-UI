@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
+import 'package:instagram_ui/constants/userlist.dart';
 import 'package:instagram_ui/utils/profile_tab1.dart';
 import 'package:instagram_ui/utils/profile_tab2.dart';
 import 'package:instagram_ui/utils/profile_tab3.dart';
@@ -49,17 +50,22 @@ class ProfilePage extends StatelessWidget {
                 child: ListView.separated(
                   separatorBuilder: (context, index) => SizedBox(width: 20),
                   scrollDirection: Axis.horizontal,
-                  itemCount: 8,
+                  itemCount: userPostList.length,
                   itemBuilder:
                       (context, index) => StoryHightlights(
-                        textBelowStory: "2025",
+                        textBelowStory: "highlight",
                         radiusOfcircleAvatar: 30,
                         isHeightlight: true,
+                        imagecvr: userPostList[index],
+                        // indx: index,
                       ),
                 ),
               ),
             ),
             TabBar(
+              indicatorColor: Colors.black,
+              // indicator: BoxDecoration(color: Colors.black),
+              labelColor: Colors.black,
               dividerHeight: 0.5,
               indicatorSize: TabBarIndicatorSize.tab,
               tabs: [

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/constants/sizedboxes.dart';
+import 'package:instagram_ui/constants/userlist.dart';
 
 class HomePosts extends StatelessWidget {
   String userName;
-  HomePosts({super.key, required this.userName});
+  int indx;
+  HomePosts({super.key, required this.userName, required this.indx});
 
   @override
   Widget build(BuildContext context) {
@@ -16,29 +19,44 @@ class HomePosts extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: CircleAvatar(backgroundColor: Colors.grey, radius: 18),
-                ),  
+                  child: CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    radius: 18,
+                    backgroundImage: AssetImage(userdpList[indx]),
+                  ),
+                ),
                 Text(userName, style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),
             Icon(Icons.more_vert),
           ],
         ),
-        Container(height: 410, decoration: BoxDecoration(color: Colors.grey)),
+        Container(
+          height: 410,
+          decoration: BoxDecoration(
+            color: Colors.grey,
+            image: DecorationImage(image: AssetImage(userPostList[indx]),fit: BoxFit.cover),
+          ),
+        ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
-                children: [
-                  Icon(Icons.favorite_outline),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(Icons.chat_bubble_outline),
-                  ),
-                  Icon(Icons.share),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 7),
+                child: Row(
+                  children: [
+                    Icon(Icons.favorite_outline, size: 28),
+                    Text("4552", style: TextStyle(fontWeight: FontWeight.bold)),
+                    kw7,
+                    Icon(Icons.chat_bubble_outline, size: 28),
+                    Text("1050", style: TextStyle(fontWeight: FontWeight.bold)),
+                    kw7,
+                    Icon(Icons.share, size: 27),
+                    Text("1405", style: TextStyle(fontWeight: FontWeight.bold)),
+                  ],
+                ),
               ),
               Icon(Icons.bookmark_outline),
             ],

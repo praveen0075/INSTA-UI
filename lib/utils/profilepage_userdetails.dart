@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
+import 'package:instagram_ui/constants/userlist.dart';
 
 class ProfilePageUserDetails extends StatelessWidget {
   const ProfilePageUserDetails({
@@ -17,7 +18,7 @@ class ProfilePageUserDetails extends StatelessWidget {
           children: [
             Stack(
               children: [
-                CircleAvatar(radius: 45),
+                CircleAvatar(radius: 45,backgroundImage: AssetImage(userdpList[0]),),
                 Positioned(
                   bottom: 0,
                   right: 0,

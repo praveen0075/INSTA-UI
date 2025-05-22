@@ -4,11 +4,15 @@ class StoryHightlights extends StatelessWidget {
   final String textBelowStory;
   final double radiusOfcircleAvatar;
   bool? isHeightlight;
+  // final int indx;
+  String imagecvr;
   StoryHightlights({
     super.key,
     required this.textBelowStory,
     required this.radiusOfcircleAvatar,
     this.isHeightlight,
+    required this.imagecvr,
+    // required this.indx
   });
 
   @override
@@ -49,7 +53,10 @@ class StoryHightlights extends StatelessWidget {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(4),
-                child: CircleAvatar(radius: radiusOfcircleAvatar),
+                child: CircleAvatar(
+                  radius: radiusOfcircleAvatar,
+                  backgroundImage: imagecvr != "" ? AssetImage(imagecvr) : null,
+                ),
               ),
             ),
           ),
