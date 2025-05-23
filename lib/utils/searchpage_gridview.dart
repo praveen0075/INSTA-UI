@@ -7,35 +7,8 @@ class SearchPageGridview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return GridView.builder(
-    //   itemCount: 20,
-    //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-    //     crossAxisSpacing: 2,
-    //     mainAxisSpacing: 2,
-    //     crossAxisCount: 3,
-    //   ),
-    //   itemBuilder:
-    //       (context, index) => Container(decoration: BoxDecoration(color: Colors.blue)),
-    // );
-    // return SliverGrid(
-    //   delegate: SliverChildBuilderDelegate(
-    //     (context, index) =>
-    //         Container(decoration: BoxDecoration(color: Colors.blue)),
-    //   ),
-    //   gridDelegate: SliverQuiltedGridDelegate(
-    //     mainAxisSpacing: 3,
-    //     crossAxisSpacing: 3,
-    //     crossAxisCount: 3,
-    //     pattern: [
-    //       QuiltedGridTile(2, 2),
-    //       QuiltedGridTile(2, 2),
-    //       // QuiltedGridTile(2, 2),
-    //       // QuiltedGridTile(2, 2),
-    //       // QuiltedGridTile(2, 2),
-    //     ],
-    //   ),
-    // );
     return MasonryGridView.count(
+      padding: EdgeInsets.all(0),
       itemCount: allPictureList.length,
       crossAxisCount: 3,
       mainAxisSpacing: 3,
@@ -46,7 +19,6 @@ class SearchPageGridview extends StatelessWidget {
             height: 300,
 
             decoration: BoxDecoration(
-              color: Colors.red,
               image: DecorationImage(
                 image: AssetImage(allPictureList[index]),
                 fit: BoxFit.cover,
@@ -71,7 +43,6 @@ class SearchPageGridview extends StatelessWidget {
             height: 148,
 
             decoration: BoxDecoration(
-              color: Colors.blue,
               image: DecorationImage(
                 image: AssetImage(allPictureList[index]),
                 fit: BoxFit.cover,

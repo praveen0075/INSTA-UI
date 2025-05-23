@@ -77,7 +77,12 @@ class AddPostScreen extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Icon(Icons.filter_none_sharp, color: Colors.white),
+                          Icon(
+                            Icons.filter_none_sharp,
+                            color: Colors.white,
+                            size: 20,
+                          ),
+                          kw5,
                           Text(
                             "SELECT MULTIPLE",
                             style: TextStyle(color: Colors.white),

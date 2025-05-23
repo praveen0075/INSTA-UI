@@ -18,7 +18,7 @@ class ProfileTab2 extends StatelessWidget {
           (context, index) => Container(
             height: 240,
             decoration: BoxDecoration(
-              color: Colors.red,
+              // color: Colors.red,
               image: DecorationImage(
                 image: AssetImage(allPictureList[index]),
                 fit: BoxFit.cover,

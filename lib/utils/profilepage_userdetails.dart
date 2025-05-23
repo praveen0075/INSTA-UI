@@ -1,12 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 
 class ProfilePageUserDetails extends StatelessWidget {
-  const ProfilePageUserDetails({
-    super.key,
-  });
+  const ProfilePageUserDetails({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,21 +15,22 @@ class ProfilePageUserDetails extends StatelessWidget {
           children: [
             Stack(
               children: [
-                CircleAvatar(radius: 45,backgroundImage: AssetImage(userdpList[0]),),
+                CircleAvatar(
+                  radius: 40,
+                  backgroundImage: AssetImage(userdpList[0]),
+                ),
                 Positioned(
                   bottom: 0,
                   right: 0,
                   child: Container(
-                    height: 30,
-                    width: 30,
+                    height: 28,
+                    width: 28,
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.white, width: 2),
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(23),
                     ),
-                    child: Center(
-                      child: Icon(Icons.add, color: Colors.white),
-                    ),
+                    child: Center(child: Icon(Icons.add, color: Colors.white)),
                   ),
                 ),
               ],
@@ -51,10 +49,10 @@ class ProfilePageUserDetails extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "10",
+                          "5",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 22,
+                            fontSize: 20,
                           ),
                         ),
                         Text(
@@ -71,7 +69,7 @@ class ProfilePageUserDetails extends StatelessWidget {
                           "1470",
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
-                            fontSize: 22,
+                            fontSize: 20,
                           ),
                         ),
                         Text(
@@ -88,7 +86,7 @@ class ProfilePageUserDetails extends StatelessWidget {
                           "1635",
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
-                            fontSize: 22,
+                            fontSize: 20,
                           ),
                         ),
                         Text(
@@ -108,10 +106,7 @@ class ProfilePageUserDetails extends StatelessWidget {
         // RichText(text: )
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
-          child: Text(
-            "Nothing is impossible",
-            textAlign: TextAlign.start,
-          ),
+          child: Text("Nothing is impossible", textAlign: TextAlign.start),
         ),
       ],
     );

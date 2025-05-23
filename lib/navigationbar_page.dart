@@ -45,7 +45,7 @@ class _NavigationPageState extends State<NavigationPage> {
             icon: Icon(Icons.add_box_outlined),
             label: "",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.video_file), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.video_collection_outlined), label: ""),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_2_outlined),
             label: "",

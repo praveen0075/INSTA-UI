@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/constants/constant_strings.dart';
 
 class MessageScreenProfilepic extends StatelessWidget {
   bool isHeightlight ;
@@ -39,8 +40,8 @@ class MessageScreenProfilepic extends StatelessWidget {
                 borderRadius: BorderRadius.circular(45),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(4),
-                child: CircleAvatar(radius: radiusOfcircleAvatar),
+                padding: const EdgeInsets.all(3),
+                child: CircleAvatar(radius: radiusOfcircleAvatar,backgroundImage: AssetImage(usericondp),),
               ),
             ),
           ),

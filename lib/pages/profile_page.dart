@@ -48,17 +48,33 @@ class ProfilePage extends StatelessWidget {
               child: SizedBox(
                 height: 130,
                 child: ListView.separated(
-                  separatorBuilder: (context, index) => SizedBox(width: 20),
+                  separatorBuilder: (context, index) => SizedBox(width: 15),
                   scrollDirection: Axis.horizontal,
                   itemCount: userPostList.length,
                   itemBuilder:
-                      (context, index) => StoryHightlights(
-                        textBelowStory: "highlight",
-                        radiusOfcircleAvatar: 30,
-                        isHeightlight: true,
-                        imagecvr: userPostList[index],
-                        // indx: index,
+                      (context, index) =>
+                       index == 0 ? Column(
+                        children: [
+                          Container(
+                        height: 75,
+                        width: 75,
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(45),
+                        ),
+                        child: Icon(Icons.add),
                       ),
+                      Text("New")
+                        ],
+                      ):
+                  StoryHightlights(
+                    textBelowStory: "highlight",
+                    radiusOfcircleAvatar: 30,
+                    isHeightlight: true,
+                    imagecvr: userPostList[index],
+                    // indx: index,
+                  ),
                 ),
               ),
             ),

@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 // constant width
 const kw35 = SizedBox(width: 35);
 const kw7 = SizedBox(width: 7,);  
+const kw5 = SizedBox(width: 5,);  
 const kw20 = SizedBox(width: 20,);  
 const kw10 = SizedBox(width: 10,);  
 const kw15 = SizedBox(width: 15,);  

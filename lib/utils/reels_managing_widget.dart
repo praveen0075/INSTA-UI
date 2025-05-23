@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/constants/constant_strings.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/utils/story_hightlights.dart';
 
@@ -31,19 +32,19 @@ class ReelsManagingWidget extends StatelessWidget {
           right: 15,
           child: Column(
             children: [
-              Icon(Icons.favorite_outline, color: Colors.white, size: 35),
+              Icon(Icons.favorite_outline, color: Colors.white, size: 30),
               Text("0", style: TextStyle(color: Colors.white, fontSize: 16)),
               kh10,
               kh10,
-              Icon(Icons.comment, color: Colors.white, size: 35),
+              Icon(Icons.comment, color: Colors.white, size: 30),
               Text("0", style: TextStyle(color: Colors.white, fontSize: 16)),
               kh10,
               kh10,
-              Icon(Icons.send_outlined, color: Colors.white, size: 35),
+              Icon(Icons.send_outlined, color: Colors.white, size: 30),
               Text("0", style: TextStyle(color: Colors.white, fontSize: 16)),
               kh10,
               kh10,
-              Icon(Icons.more_vert_outlined, color: Colors.white, size: 35),
+              Icon(Icons.more_vert_outlined, color: Colors.white, size: 30),
               kh10,
               kh10,
               kh10,
@@ -75,7 +76,7 @@ class ReelsManagingWidget extends StatelessWidget {
                     textBelowStory: "",
                     radiusOfcircleAvatar: 16,
                     isHeightlight: false,
-                    imagecvr: "",
+                    imagecvr: defaultImg,
                   ),
                   kw7,
                   Column(
@@ -88,8 +89,6 @@ class ReelsManagingWidget extends StatelessWidget {
                           fontSize: 17,
                         ),
                       ),
-                      kh10,
-                      kh10,
                       kh10,
                       kh10,
                     ],
@@ -148,7 +147,7 @@ class ReelsManagingWidget extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 10,
+          top: 30,
           left: 10,
           right: 11,
           child: Row(

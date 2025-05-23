@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/constants/constant_strings.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 
 class ChatPage extends StatelessWidget {
@@ -12,7 +13,7 @@ class ChatPage extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(children: [CircleAvatar(radius: 20), kw7, Text("username_23")]),
+            Row(children: [CircleAvatar(radius: 18,backgroundImage: AssetImage(usericondp),), kw7, Text("username_23")]),
             Row(
               children: [
                 Icon(Icons.phone_outlined),
@@ -33,7 +34,7 @@ class ChatPage extends StatelessWidget {
             right: 7,
             child: Container(
               width: scrnSize.width,
-              height: 66,
+              height: 55,
               decoration: BoxDecoration(
                 color: const Color.fromARGB(205, 227, 222, 227),
                 borderRadius: BorderRadius.circular(38),
@@ -45,22 +46,22 @@ class ChatPage extends StatelessWidget {
                     children: [
                       kw10,
                       CircleAvatar(
-                        radius: 24,
+                        radius: 20,
                         backgroundColor: Colors.purple,
                         child: Icon(
                           Icons.camera_alt_rounded,
                           color: Colors.white,
-                          size: 27,
+                          size: 20,
                         ),
                       ),
                       kw10,
                       SizedBox(
-                        width: 160,
+                        width: 150,
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: "Message...",
-                            hintStyle: TextStyle(fontSize: 19),
+                            hintStyle: TextStyle(fontSize: 17),
                           ),
                         ),
                       ),
@@ -68,13 +69,13 @@ class ChatPage extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Icon(Icons.mic_none_rounded, size: 30),
+                      Icon(Icons.mic_none_rounded, size: 25),
                       kw10,
-                      Icon(Icons.image_outlined, size: 30),
+                      Icon(Icons.image_outlined, size: 25),
                       kw10,
-                      Icon(Icons.sticky_note_2_outlined, size: 30),
+                      Icon(Icons.sticky_note_2_outlined, size: 25),
                       kw10,
-                      Icon(Icons.add_circle_outline_outlined, size: 30),
+                      Icon(Icons.add_circle_outline_outlined, size: 25),
                       kw10,
                     ],
                   ),

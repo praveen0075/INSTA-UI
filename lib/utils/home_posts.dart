@@ -11,6 +11,7 @@ class HomePosts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      // mainAxisAlignment: MainAxisAlignment.start, 
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,10 +51,10 @@ class HomePosts extends StatelessWidget {
                     Icon(Icons.favorite_outline, size: 28),
                     Text("4552", style: TextStyle(fontWeight: FontWeight.bold)),
                     kw7,
-                    Icon(Icons.chat_bubble_outline, size: 28),
+                    Icon(Icons.comment_outlined, size: 28),
                     Text("1050", style: TextStyle(fontWeight: FontWeight.bold)),
                     kw7,
-                    Icon(Icons.share, size: 27),
+                    Icon(Icons.send, size: 27),
                     Text("1405", style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
                 ),

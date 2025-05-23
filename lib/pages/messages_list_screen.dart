@@ -26,54 +26,55 @@ class MessagesListScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
-            child: Container(
-              padding: EdgeInsets.all(9),
-              decoration: BoxDecoration(
-                color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(20),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
+              child: Container(
+                padding: EdgeInsets.all(9),
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Row(
+                  children: [
+                    kw7,
+                    Icon(Icons.search, color: Colors.grey.shade600),
+                    kw7,
+                    Text(
+                      "Search",
+                      style: TextStyle(color: Colors.grey.shade600, fontSize: 15),
+                    ),
+                  ],
+                ),
               ),
+            ),
+            kh20,
+            MessageScreenNotesList(),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  kw7,
-                  Icon(Icons.search, color: Colors.grey.shade600),
-                  kw7,
                   Text(
-                    "Search",
-                    style: TextStyle(color: Colors.grey.shade600, fontSize: 15),
+                    "Messages",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
+                  ),
+                  Text(
+                    "Requests (0)",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 19,
+                    ),
                   ),
                 ],
               ),
             ),
-          ),
-          kh20,
-          MessageScreenNotesList(),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 13),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Messages",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
-                ),
-                Text(
-                  "Requests (0)",
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 19,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Expanded(
-            child: ListView.separated(
-              // shrinkWrap: true,
+            ListView.separated(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               itemBuilder:
                   (context, index) => GestureDetector(
                     onTap:
@@ -86,18 +87,18 @@ class MessagesListScreen extends StatelessWidget {
               separatorBuilder: (context, index) => SizedBox(height: 0),
               itemCount: 10,
             ),
-          ),
-          // Expanded(
-          //   child: ListView.builder(
-          //     itemCount: 10,
-          //     itemBuilder:
-          //         (context, index) => ListTile(
-          //           title: Text("Title ",style: TextStyle(color: Colors.black),),
-          //           subtitle: Text("subttile"),
-          //         ),
-          //   ),
-          // ),
-        ],
+            // Expanded(
+            //   child: ListView.builder(
+            //     itemCount: 10,
+            //     itemBuilder:
+            //         (context, index) => ListTile(
+            //           title: Text("Title ",style: TextStyle(color: Colors.black),),
+            //           subtitle: Text("subttile"),
+            //         ),
+            //   ),
+            // ),
+          ],
+        ),
       ),
     );
   }

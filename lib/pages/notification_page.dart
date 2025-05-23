@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/constants/constant_strings.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
+import 'package:instagram_ui/constants/userlist.dart';
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({super.key});
@@ -60,7 +62,10 @@ class NotificationPage extends StatelessWidget {
                 itemCount: 5,
                 itemBuilder:
                     (context, index) => ListTile(
-                      leading: CircleAvatar(radius: 35),
+                      leading: CircleAvatar(
+                        radius: 35,
+                        backgroundImage: AssetImage(defaultImg),
+                      ),
                       title: Text(
                         "username-23uo",
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -86,7 +91,10 @@ class NotificationPage extends StatelessWidget {
                         child: Center(
                           child: Text(
                             "Follow",
-                            style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
@@ -110,7 +118,10 @@ class NotificationScreenFollowUnfollowSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(radius: 35),
+      leading: CircleAvatar(
+        radius: 35,
+        backgroundImage: AssetImage(defaultImg),
+      ),
       title: RichText(
         text: TextSpan(
           children: [
@@ -139,7 +150,7 @@ class NotificationScreenFollowUnfollowSection extends StatelessWidget {
         child: Center(
           child: Text(
             isFollwing == false ? "Follow back" : "Following",
-            style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
       ),
@@ -187,15 +198,22 @@ class NotficationScreenStoryLiked extends StatelessWidget {
               // right: 10,
               // left: 15,
               top: 0,
-              right: 14,
+              right: 16,
               bottom: 0,
-              child: CircleAvatar(radius: 20),
+              child: CircleAvatar(
+                radius: 17,
+                backgroundImage: AssetImage(defaultImg),
+              ),
             ),
             Positioned(
               // right: 14,
-              left: 19,
+              left: 20,
               bottom: -0,
-              child: CircleAvatar(radius: 20, backgroundColor: Colors.blue),
+              child: CircleAvatar(
+                radius: 17,
+                backgroundColor: Colors.blue,
+                backgroundImage: AssetImage(usericondp),
+              ),
             ),
           ],
         ),
@@ -220,9 +238,13 @@ class NotficationScreenStoryLiked extends StatelessWidget {
       ),
       // subtitle: const Text("name index"),
       trailing: Container(
-        height: 60,
-        width: 55,
+        height: 55,
+        width: 50,
         decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(userPostList[4]),
+            fit: BoxFit.cover,
+          ),
           color: Colors.grey,
           borderRadius: BorderRadius.circular(12),
         ),
