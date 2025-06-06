@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 
+// ignore: must_be_immutable
 class HomePosts extends StatelessWidget {
   String userName;
   int indx;
@@ -11,7 +12,6 @@ class HomePosts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.start, 
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -36,7 +36,10 @@ class HomePosts extends StatelessWidget {
           height: 410,
           decoration: BoxDecoration(
             color: Colors.grey,
-            image: DecorationImage(image: AssetImage(userPostList[indx]),fit: BoxFit.cover),
+            image: DecorationImage(
+              image: AssetImage(userPostList[indx]),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
         Padding(
@@ -96,13 +99,7 @@ class HomePosts extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child:
-          //  Row(
-          //   children: [
-          //     Text("6 minutes ago",style: TextStyle(fontSize: 12),),
-          //   ],
-          // ),
-          Text("6 minutes ago", style: TextStyle(fontSize: 12)),
+          child: Text("6 minutes ago", style: TextStyle(fontSize: 12)),
         ),
       ],
     );

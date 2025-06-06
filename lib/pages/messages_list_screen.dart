@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/pages/chat_page.dart';
-import 'package:instagram_ui/utils/message_screen_%20notelist.dart';
+import 'package:instagram_ui/utils/message_screen_notelist.dart.dart';
 import 'package:instagram_ui/utils/message_screen_messagelist.dart';
 
 class MessagesListScreen extends StatelessWidget {
@@ -87,16 +87,6 @@ class MessagesListScreen extends StatelessWidget {
               separatorBuilder: (context, index) => SizedBox(height: 0),
               itemCount: 10,
             ),
-            // Expanded(
-            //   child: ListView.builder(
-            //     itemCount: 10,
-            //     itemBuilder:
-            //         (context, index) => ListTile(
-            //           title: Text("Title ",style: TextStyle(color: Colors.black),),
-            //           subtitle: Text("subttile"),
-            //         ),
-            //   ),
-            // ),
           ],
         ),
       ),

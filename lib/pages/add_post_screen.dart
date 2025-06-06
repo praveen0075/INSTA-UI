@@ -6,7 +6,6 @@ class AddPostScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final scrnSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -32,18 +31,6 @@ class AddPostScreen extends StatelessWidget {
           children: [
             SizedBox(
               height: 370,
-              // child: GridView.builder(
-              //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              //     crossAxisCount: 1,
-              //     mainAxisSpacing: 1,
-              //     crossAxisSpacing: 1,
-              //   ),
-              //   itemBuilder: (context, index) {
-              //     return Container(
-              //       decoration: BoxDecoration(color: Colors.red),
-              //     );
-              //   },
-              // ),
               child: Container(color: Colors.black),
             ),
             Container(

@@ -16,7 +16,6 @@ class ProfileTab3 extends StatelessWidget {
       itemBuilder:
           (context, index) => Container(
             decoration: BoxDecoration(
-              // color: Colors.green,
               image: DecorationImage(
                 image: AssetImage(userdpList[index]),
                 fit: BoxFit.cover,

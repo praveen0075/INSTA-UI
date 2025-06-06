@@ -9,7 +9,6 @@ class ProfilePageActionButtons extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceAro,
         children: [
           Container(
             decoration: BoxDecoration(

@@ -32,10 +32,6 @@ class AddFeedPageState extends State<AddFeedPage> {
     });
   }
 
-  // navigationTapped(int page) {
-  //   pageController.jumpToPage(page);
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

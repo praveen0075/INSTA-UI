@@ -96,7 +96,6 @@ class Homepage extends StatelessWidget {
                                             height: 30,
                                             width: 30,
                                             decoration: BoxDecoration(
-                                              // image: DecorationImage(image: AssetImage)),
                                               border: Border.all(
                                                 color: Colors.white,
                                                 width: 2,
@@ -119,9 +118,7 @@ class Homepage extends StatelessWidget {
                                     Text("Your story"),
                                   ],
                                 )
-                                :
-                                // HomeStoriesWidget(userNameText: userNames[index]),
-                                StoryHightlights(
+                                : StoryHightlights(
                                   textBelowStory: usernameList[index],
                                   radiusOfcircleAvatar: 35,
                                   isHeightlight: false,
@@ -130,9 +127,7 @@ class Homepage extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                // height: 100,
-                // color: Colors.blue,
+              SizedBox(
                 child: ListView.builder(
                   padding: EdgeInsets.all(0),
                   physics: NeverScrollableScrollPhysics(),
@@ -147,120 +142,6 @@ class Homepage extends StatelessWidget {
           ),
         ),
       ),
-      //   appBar: AppBar(
-      //     // backgroundColor: Colors.transparent ,
-      //     title: Row(
-      //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //       children: [
-      //         SizedBox(
-      //           // color: Colors.blue,
-      //           height: 40 ,
-      //           child: Image.asset("assets/images/Instagram_logo.svg.png")),
-      //         Row(
-      //           children: [
-      //             // Icon(Icons.add),
-      //             Padding(
-      //               padding: const EdgeInsets.all(20),
-      //               child: GestureDetector(
-      //                 onTap:
-      //                     () => Navigator.push(
-      //                       context,
-      //                       MaterialPageRoute(
-      //                         builder: (context) => NotificationPage(),
-      //                       ),
-      //                     ),
-      //                 child: Icon(Icons.favorite_outline),
-      //               ),
-      //             ),
-      //             GestureDetector(
-      //               onTap:
-      //                   () => Navigator.push(
-      //                     context,
-      //                     MaterialPageRoute(
-      //                       builder: (context) => MessagesListScreen(),
-      //                     ),
-      //                   ),
-      //               child: Icon(Icons.message_outlined),
-      //             ),
-      //           ],
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      //   body: SingleChildScrollView(
-      //     child: Column(
-      //       children: [
-      //         Padding(
-      //           padding: const EdgeInsets.symmetric(horizontal: 10),
-      //           child: SizedBox(
-      //             height: 111,
-      //             child: ListView.separated(
-      //               separatorBuilder: (context, index) => SizedBox(width: 10),
-      //               scrollDirection: Axis.horizontal,
-      //               itemCount: usernameList.length,
-      //               itemBuilder:
-      //                   (context, index) =>
-      //                       index == 0
-      //                           ? Column(
-      //                             crossAxisAlignment: CrossAxisAlignment.center,
-      //                             children: [
-      //                               Stack(
-      //                                 children: [
-      //                                   CircleAvatar(radius: 38,backgroundImage: AssetImage(userdpList[0]),),
-      //                                   Positioned(
-      //                                     bottom: 0,
-      //                                     right: 0,
-      //                                     child: Container(
-      //                                       height: 30,
-      //                                       width: 30,
-      //                                       decoration: BoxDecoration(
-      //                                         // image: DecorationImage(image: AssetImage)),
-      //                                         border: Border.all(
-      //                                           color: Colors.white,
-      //                                           width: 2,
-      //                                         ),
-      //                                         color: Colors.blue,
-      //                                         borderRadius: BorderRadius.circular(
-      //                                           23,
-      //                                         ),
-      //                                       ),
-      //                                       child: Center(
-      //                                         child: Icon(
-      //                                           Icons.add,
-      //                                           color: Colors.white,
-      //                                         ),
-      //                                       ),
-      //                                     ),
-      //                                   ),
-      //                                 ],
-      //                               ),
-      //                               kh5,
-      //                               Text("Your story"),
-      //                             ],
-      //                           )
-      //                           :
-      //                           // HomeStoriesWidget(userNameText: userNames[index]),
-      //                           StoryHightlights(
-      //                             textBelowStory: usernameList[index],
-      //                             radiusOfcircleAvatar: 35,
-      //                             isHeightlight: false,
-      //                             imagecvr: userdpList[index],
-      //                           ),
-      //             ),
-      //           ),
-      //         ),
-      //         SizedBox(
-      //           child: ListView.builder(
-      //             physics: NeverScrollableScrollPhysics(),
-      //             shrinkWrap: true,
-      //             itemCount: usernameList.length,
-      //             itemBuilder:
-      //                 (context, index) => HomePosts(userName: userNames[index],indx: index,),
-      //           ),
-      //         ),
-      //       ],
-      //     ),
-      //   ),
     );
   }
 }

@@ -103,7 +103,6 @@ class ProfilePageUserDetails extends StatelessWidget {
           ],
         ),
         kh5,
-        // RichText(text: )
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Text("Nothing is impossible", textAlign: TextAlign.start),

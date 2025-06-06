@@ -8,7 +8,6 @@ class MessageScreenNotesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // color: Colors.red,
       height: 150,
       child: ListView.separated(
         separatorBuilder: (context, index) => kw7,
@@ -34,12 +33,9 @@ class MessageScreenNotesList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          // right: 0,
-                          // top: 0,
-                          // left: 0,
+                  
                           left: 0.16,
                           right: 0.5,
-                          // bottom: 3,
                           child: Card(
                             child: SizedBox(
                               width: 116,
@@ -72,8 +68,7 @@ class MessageScreenNotesList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          // top: 0,
-                          // left: 0,
+                 
                           left: 0.16,
                           right: 0.5,
                           child: Card(

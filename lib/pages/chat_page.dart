@@ -29,7 +29,6 @@ class ChatPage extends StatelessWidget {
           Container(height: scrnSize.height, color: Colors.white),
           Positioned(
             bottom: 10,
-            // top: 0,
             left: 7,
             right: 7,
             child: Container(

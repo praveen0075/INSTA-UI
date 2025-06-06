@@ -59,7 +59,6 @@ class ReelsManagingWidget extends StatelessWidget {
                   child: Icon(Icons.music_note, color: Colors.white, size: 18),
                 ),
               ),
-              // Text("0",style: TextStyle(color: Colors.white,fontSize: 16),),
             ],
           ),
         ),
@@ -70,7 +69,6 @@ class ReelsManagingWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                // crossAxisAlignment: CrossAxisAlignment.center ,
                 children: [
                   StoryHightlights(
                     textBelowStory: "",

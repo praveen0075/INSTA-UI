@@ -48,30 +48,9 @@ class SearchPageGridview extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            // child: Image.asset(ListConsts.profilePics[index],fit: BoxFit.cover,),
           );
         }
       },
     );
-    //     return GridView.custom(
-    //   gridDelegate: SliverQuiltedGridDelegate(
-    //     crossAxisCount: 3,
-    //     mainAxisSpacing: 3,
-    //     crossAxisSpacing: 3,
-    //     repeatPattern: QuiltedGridRepeatPattern.inverted,
-    //     pattern: [
-    //       QuiltedGridTile(1, 1),
-    //       QuiltedGridTile(2, 1),
-    //       QuiltedGridTile(1, 1),
-    //       QuiltedGridTile(1, 1),
-    //     ],
-    //   ),
-    //   childrenDelegate: SliverChildBuilderDelegate(
-    //     (context, index) => Container(
-    //       color: Colors.primaries[index % Colors.primaries.length],
-    //     ),
-    //     childCount: 20, // LIMIT the number of children
-    //   ),
-    // );
   }
 }

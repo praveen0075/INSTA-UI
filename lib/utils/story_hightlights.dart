@@ -4,7 +4,6 @@ class StoryHightlights extends StatelessWidget {
   final String textBelowStory;
   final double radiusOfcircleAvatar;
   bool? isHeightlight;
-  // final int indx;
   String imagecvr;
   StoryHightlights({
     super.key,
@@ -12,7 +11,6 @@ class StoryHightlights extends StatelessWidget {
     required this.radiusOfcircleAvatar,
     this.isHeightlight,
     required this.imagecvr,
-    // required this.indx
   });
 
   @override

@@ -35,7 +35,6 @@ class ProfilePage extends StatelessWidget {
       body: DefaultTabController(
         length: 3,
         child: Column(
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ProfilePageUserDetails(),
             kh5,
@@ -72,15 +71,12 @@ class ProfilePage extends StatelessWidget {
                     textBelowStory: "highlight",
                     radiusOfcircleAvatar: 30,
                     isHeightlight: true,
-                    imagecvr: userPostList[index],
-                    // indx: index,
-                  ),
+                    imagecvr: userPostList[index],                  ),
                 ),
               ),
             ),
             TabBar(
               indicatorColor: Colors.black,
-              // indicator: BoxDecoration(color: Colors.black),
               labelColor: Colors.black,
               dividerHeight: 0.5,
               indicatorSize: TabBarIndicatorSize.tab,
