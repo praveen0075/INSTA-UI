@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 import 'package:instagram_ui/pages/messages_list_screen.dart';
@@ -44,7 +45,7 @@ class Homepage extends StatelessWidget {
                                     builder: (context) => NotificationPage(),
                                   ),
                                 ),
-                            child: Icon(Icons.favorite_outline),
+                            child: Icon(Icons.favorite_outline, size: 27),
                           ),
                         ),
                         GestureDetector(
@@ -55,7 +56,10 @@ class Homepage extends StatelessWidget {
                                   builder: (context) => MessagesListScreen(),
                                 ),
                               ),
-                          child: Icon(Icons.message_outlined),
+                          child: SvgPicture.asset(
+                            "assets/icons/instagram-dm-direct-message-icon.svg",
+                            width: 24,
+                          ),
                         ),
                       ],
                     ),

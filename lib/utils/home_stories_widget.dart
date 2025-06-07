@@ -21,7 +21,7 @@ class HomeStoriesWidget extends StatelessWidget {
               color: Colors.grey,
               borderRadius: BorderRadius.circular(33),
             ),
-          ),
+          ),  
           SizedBox(height: 10),
           Text(userNameText),
         ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 
 class ProfileTab2 extends StatelessWidget {
@@ -29,11 +30,8 @@ class ProfileTab2 extends StatelessWidget {
                 Positioned(
                   right: 8,
                   top: 8,
-                  child: Icon(
-                    Icons.video_library_sharp,
-                    color: Colors.white,
-                    size: 30,
-                  ),
+               
+                  child: SvgPicture.asset("assets/icons/instagram-reels-icon.svg",width: 24,color: Colors.white,),
                 ),
               ],
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 
 class SearchPageGridview extends StatelessWidget {
@@ -29,10 +30,15 @@ class SearchPageGridview extends StatelessWidget {
                 Positioned(
                   right: 8,
                   top: 8,
-                  child: Icon(
-                    Icons.video_library_sharp,
+                  // child: Icon(
+                  //   Icons.video_library_sharp,
+                  //   color: Colors.white,
+                  //   size: 30,
+                  // ),
+                  child: SvgPicture.asset(
+                    "assets/icons/instagram-reels-icon.svg",
+                    width: 25,
                     color: Colors.white,
-                    size: 30,
                   ),
                 ),
               ],

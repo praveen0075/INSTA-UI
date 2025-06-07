@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 import 'package:instagram_ui/utils/profile_tab1.dart';
@@ -24,7 +25,7 @@ class ProfilePage extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.add_box_outlined, size: 32),
+                Icon(Icons.add_box_outlined, size: 30),
                 SizedBox(width: 8),
                 Icon(Icons.list, size: 32),
               ],
@@ -82,7 +83,7 @@ class ProfilePage extends StatelessWidget {
               indicatorSize: TabBarIndicatorSize.tab,
               tabs: [
                 Tab(icon: Icon(Icons.grid_on)),
-                Tab(icon: Icon(Icons.video_library_outlined)),
+                Tab(icon: SvgPicture.asset("assets/icons/instagram-reels-icon.svg",width: 23,)),
                 Tab(icon: Icon(Icons.perm_contact_calendar_outlined)),
               ],
             ),

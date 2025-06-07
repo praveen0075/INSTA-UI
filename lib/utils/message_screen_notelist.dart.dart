@@ -33,7 +33,6 @@ class MessageScreenNotesList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                  
                           left: 0.16,
                           right: 0.5,
                           child: Card(
@@ -68,7 +67,6 @@ class MessageScreenNotesList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                 
                           left: 0.16,
                           right: 0.5,
                           child: Card(
@@ -78,7 +76,7 @@ class MessageScreenNotesList extends StatelessWidget {
                                 padding: const EdgeInsets.all(1),
                                 child: Text(
                                   textAlign: TextAlign.center,
-                                  "Nothing is impossimple",
+                                  "Nothing is impossible",
                                 ),
                               ),
                             ),

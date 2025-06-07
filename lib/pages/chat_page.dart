@@ -10,15 +10,25 @@ class ChatPage extends StatelessWidget {
     final scrnSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(children: [CircleAvatar(radius: 18,backgroundImage: AssetImage(usericondp),), kw7, Text("username_23")]),
             Row(
               children: [
-                Icon(Icons.phone_outlined),
+                CircleAvatar(
+                  radius: 18,
+                  backgroundImage: AssetImage(usericondp),
+                ),
                 kw7,
-                Icon(Icons.videocam_outlined),
+                Text("username_23"),
+              ],
+            ),
+            Row(
+              children: [
+                Icon(Icons.phone_outlined, size: 25),
+                kw10,
+                Icon(Icons.videocam_outlined, size: 28),
               ],
             ),
           ],

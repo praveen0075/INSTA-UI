@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:instagram_ui/constants/sizedboxes.dart';
 import 'package:instagram_ui/constants/userlist.dart';
 
@@ -54,15 +55,18 @@ class HomePosts extends StatelessWidget {
                     Icon(Icons.favorite_outline, size: 28),
                     Text("4552", style: TextStyle(fontWeight: FontWeight.bold)),
                     kw7,
-                    Icon(Icons.comment_outlined, size: 28),
-                    Text("1050", style: TextStyle(fontWeight: FontWeight.bold)),
+                    // Icon(Icons.comment_outlined, size: 28),
+                    SvgPicture.asset("assets/icons/instagram-comment-icon.svg",width: 23,),
+                    kw5,
+                    Text("235", style: TextStyle(fontWeight: FontWeight.bold)),
                     kw7,
-                    Icon(Icons.send, size: 27),
-                    Text("1405", style: TextStyle(fontWeight: FontWeight.bold)),
+                    SvgPicture.asset("assets/icons/instagram-share-icon.svg",width: 23,),
+                    kw5, 
+                    Text("130", style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
                 ),
               ),
-              Icon(Icons.bookmark_outline),
+              Icon(Icons.bookmark_outline), 
             ],
           ),
         ),
