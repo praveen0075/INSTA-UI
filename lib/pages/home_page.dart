@@ -14,7 +14,8 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     List userNames = ["user1", "user2", "user3", "user4", "user5", "user6"];
     return Scaffold(
-      body: NestedScrollView(
+      backgroundColor: Colors.white,
+      body: NestedScrollView( 
         headerSliverBuilder:
             (context, innerBoxIsScrolled) => [
               SliverAppBar(

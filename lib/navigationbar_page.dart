@@ -33,8 +33,10 @@ class _NavigationPageState extends State<NavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white, 
       body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         selectedIconTheme: IconThemeData(color: Colors.black),
         onTap: _navigateThroughPages,
         currentIndex: _selectedIndex,
@@ -47,6 +49,7 @@ class _NavigationPageState extends State<NavigationPage> {
             label: "",
           ),
           BottomNavigationBarItem(
+            
             icon: SvgPicture.asset(
               "assets/icons/instagram-reels-icon.svg",
               width: 21, 
