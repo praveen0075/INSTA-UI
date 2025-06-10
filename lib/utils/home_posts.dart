@@ -88,7 +88,7 @@ class HomePosts extends StatelessWidget {
               style: TextStyle(color: Colors.black),
               children: [
                 TextSpan(
-                  text: "$userName : ",
+                  text: "$userName  ",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
 
